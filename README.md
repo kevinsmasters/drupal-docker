@@ -121,3 +121,9 @@ This project is licensed under the MIT open source license.
 [wodby/webgrind]: https://hub.docker.com/r/wodby/webgrind
 [wodby/xhprof]: https://hub.docker.com/r/wodby/xhprof
 [zookeeper]: https://hub.docker.com/_/zookeeper
+
+local environment
+run docker desktop
+make up
+http://drupal.docker.localhost:8000
+https://wodby.com/docs/1.0/stacks/drupal/local/#usage

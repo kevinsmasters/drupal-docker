@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e49a4858f977ed5788490498f5d800d4",
+    "content-hash": "dc059ea392548b71bfdef03ab38339e0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -493,6 +493,11 @@
         {
             "name": "drupal/core",
             "version": "11.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core.git",
+                "reference": "f42022412292b6f7d125f2d6b0f8d0027c1c6a1c"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core/zipball/f42022412292b6f7d125f2d6b0f8d0027c1c6a1c",
@@ -648,16 +653,16 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core.git",
-                "reference": "f42022412292b6f7d125f2d6b0f8d0027c1c6a1c"
-            }
+            "description": "Drupal is an open source content management platform powering millions of websites and applications."
         },
         {
             "name": "drupal/core-composer-scaffold",
             "version": "11.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-composer-scaffold.git",
+                "reference": "aa1f45d8242a8e34fdf87f338073d374e0baeeff"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/aa1f45d8242a8e34fdf87f338073d374e0baeeff",
@@ -693,16 +698,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "aa1f45d8242a8e34fdf87f338073d374e0baeeff"
-            }
+            ]
         },
         {
             "name": "drupal/core-project-message",
             "version": "11.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-project-message.git",
+                "reference": "d1da83722735cb0f7ccabf9fef7b5607b442c3a8"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-project-message/zipball/d1da83722735cb0f7ccabf9fef7b5607b442c3a8",
@@ -729,16 +734,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-project-message.git",
-                "reference": "d1da83722735cb0f7ccabf9fef7b5607b442c3a8"
-            }
+            ]
         },
         {
             "name": "drupal/core-recommended",
             "version": "11.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-recommended.git",
+                "reference": "10aeb634cb68b3f17c586f816547eceaebfabcc1"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-recommended/zipball/10aeb634cb68b3f17c586f816547eceaebfabcc1",
@@ -808,11 +813,50 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
+            "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
+        },
+        {
+            "name": "drupal/uswds_base",
+            "version": "3.9.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "10aeb634cb68b3f17c586f816547eceaebfabcc1"
+                "url": "https://git.drupalcode.org/project/uswds_base.git",
+                "reference": "3.9.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/uswds_base-3.9.0.zip",
+                "reference": "3.9.0",
+                "shasum": "9f848b93aa2be37f925c79789608048bf1ab63a3"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "3.9.0",
+                    "datestamp": "1729117059",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mferanda",
+                    "homepage": "https://www.drupal.org/user/3541484"
+                }
+            ],
+            "description": "Drupal USWDS Base Theme - The U.S. Web Design System provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital government services.",
+            "homepage": "https://www.drupal.org/project/uswds_base",
+            "support": {
+                "source": "https://git.drupalcode.org/project/uswds_base"
             }
         },
         {
@@ -4662,13 +4706,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "platform-overrides": {
-        "php": "8.3.0"
-    },
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
